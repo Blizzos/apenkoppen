@@ -1,5 +1,7 @@
 body {
     font-family: "Poppins", "Montserrat";
+    margin: 0;
+    padding: 0;
 }
 
 
@@ -24,4 +26,148 @@ p {
     font-size: 12px;
     font-weight: 500;
     word-spacing: 0.5em;
+}
+
+.header {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    padding: 0% 15% 0% 15%;
+    box-shadow: 0 4px 3px -2px gray;
+}
+
+.logo {
+    padding: 10px 0px 10px 0px;
+}
+
+.logo img {
+    width: 70%;
+    height: auto;
+    display: block;
+}
+
+.menu ul {
+    display: flex;
+    font-size: 14px;
+    gap: 20px;
+    list-style: none;
+    text-decoration: none;
+
+}
+
+.header-image {
+    background: url('images/photos/header.jpg') no-repeat;
+    background-size: 100%;
+    background-attachment: fixed;
+    display: flex;
+    justify-content: center;
+    height: 600px;
+    width: 100%;
+}
+
+.text-overlay {
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: column;
+    text-align: center;
+    width: 50%;
+    color: white;
+    font-size: 13px;
+    align-self: flex-end;
+    margin-bottom: 25%;
+    line-height: 30px;
+}
+
+.overlay-buttons {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 20px;
+}
+
+button {
+    font-family: Poppins;
+    font-weight: bold;
+    color: black;
+    background-color: #f3ff29;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 30px 10px 30px;
+}
+
+h1 {
+    font-size: 36px;
+    font-weight: 800;
+}
+
+.about-title {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 4%;
+}
+
+#apenkoppen {
+    background: url('images/bg/apenkoppen_BG.png') no-repeat;
+    background-size: 150%;
+    -webkit-background-clip: text;
+    color:transparent;
+}
+
+.about {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    margin-top: 30px;
+}
+
+.about-text, p {
+    width: 300px;
+    height: auto;
+    line-height: 20px;
+    font-family: 'Poppins';
+    font-weight:300;
+}
+
+
+
+.about-image {
+    background: url('images/photos/roc.jpg') no-repeat;
+    background-size: 100%;
+    width: 200px;
+    height: 200px;
+}
+
+.diensten {
+    display: grid;
+    justify-content: center;
+    text-align: center;
+    gap: 30px;
+}
+
+.dienst img {
+    display: flex;
+    width: 100px;
+    height: 100px;
+}
+
+.dienst {
+    display: inline;
+    justify-content: center;
+}
+
+#no1 {
+    justify-self: left;
+    grid-column: 1;
+}
+
+#no2 {
+    justify-self: center;
+    grid-column: 2;
+}
+
+#no3 {
+    justify-self: right;
+    grid-column: 3;
 }
