@@ -120,6 +120,7 @@ h1 {
     justify-content: center;
     gap: 100px;
     margin-top: 30px;
+    margin-bottom: 30px;
 }
 
 .about-text, p {
@@ -140,34 +141,73 @@ h1 {
 }
 
 .diensten {
-    display: grid;
-    justify-content: center;
-    text-align: center;
-    gap: 30px;
-}
-
-.dienst img {
     display: flex;
-    width: 100px;
-    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .dienst {
-    display: inline;
-    justify-content: center;
+    text-align: center;
+    width: 40%;
 }
 
-#no1 {
-    justify-self: left;
-    grid-column: 1;
+.dienst img {
+    max-width: 80%;
+    height: auto;
 }
 
-#no2 {
-    justify-self: center;
-    grid-column: 2;
+.dienst h2 {
+    font-size: 18px;
+    margin: 0 0 0;
+    color: #333;
+    font-family: 'Poppins';
+    font-weight: 500;
 }
 
-#no3 {
-    justify-self: right;
-    grid-column: 3;
+.portfolio {
+    position: relative;
+    max-width: 1200px;
+    height: 250px;
+    overflow: hidden;
+    margin-top: 50px;
+}
+
+.reel {
+    display: flex;
+    transition: transform 0.5 ease;
+    height: 100%;
+}
+
+.project {
+    width: 40%;
+    position: relative;
+    height: 100%;
+}
+
+.project img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.project-title {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    font-size: 24px;
+    text-transform: uppercase;
+    font-weight: bold;
+    padding: 10px;
+    opacity: 0;
+    transition: opacity 0.3s;
+    word-spacing: 100vw;
+}
+
+.project:hover .project-title {
+    opacity: 1;
 }
